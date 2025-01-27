@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar nav nav"
+        "sidebar article article"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: #FFD700;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #00BFFF;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #FF6347;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.article {
+    grid-area: article;
+    background-color: #B0C4DE;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Nav</nav>
+        <aside class="sidebar">Sidebar</aside>
+        <article class="article">
+            <h2>Article</h2>
+            <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+        </article>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
